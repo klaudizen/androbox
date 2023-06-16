@@ -1,0 +1,135 @@
+{
+  "advancedMachineFeatures": {
+    "enableNestedVirtualization": true
+  },
+  "canIpForward": false,
+  "cpuPlatform": "Intel Haswell",
+  "creationTimestamp": "2023-06-16T08:22:28.281-07:00",
+  "deletionProtection": false,
+  "disks": [
+    {
+      "architecture": "X86_64",
+      "autoDelete": true,
+      "boot": true,
+      "deviceName": "androvm",
+      "diskSizeGb": "50",
+      "guestOsFeatures": [
+        {
+          "type": "UEFI_COMPATIBLE"
+        },
+        {
+          "type": "VIRTIO_SCSI_MULTIQUEUE"
+        },
+        {
+          "type": "GVNIC"
+        }
+      ],
+      "index": 0,
+      "interface": "SCSI",
+      "kind": "compute#attachedDisk",
+      "licenses": [
+        "https://www.googleapis.com/compute/beta/projects/debian-cloud/global/licenses/debian-11-bullseye"
+      ],
+      "mode": "READ_WRITE",
+      "source": "https://www.googleapis.com/compute/beta/projects/refined-veld-388616/zones/asia-southeast2-b/disks/androvm",
+      "type": "PERSISTENT"
+    }
+  ],
+  "displayDevice": {
+    "enableDisplay": true
+  },
+  "fingerprint": "pIUaVULiIN0=",
+  "id": "3868172490499014876",
+  "kind": "compute#instance",
+  "labelFingerprint": "54ffHQLiMnU=",
+  "labels": {
+    "goog-ec-src": "vm_add-gcloud"
+  },
+  "lastStartTimestamp": "2023-06-16T08:22:34.458-07:00",
+  "machineType": "https://www.googleapis.com/compute/beta/projects/refined-veld-388616/zones/asia-southeast2-b/machineTypes/n1-standard-1",
+  "metadata": {
+    "fingerprint": "EmODQ22cRqY=",
+    "kind": "compute#metadata"
+  },
+  "minCpuPlatform": "Intel Haswell",
+  "name": "androvm",
+  "networkInterfaces": [
+    {
+      "accessConfigs": [
+        {
+          "kind": "compute#accessConfig",
+          "name": "external-nat",
+          "natIP": "34.101.90.88",
+          "networkTier": "PREMIUM",
+          "type": "ONE_TO_ONE_NAT"
+        }
+      ],
+      "fingerprint": "9qDVGrKQErc=",
+      "kind": "compute#networkInterface",
+      "name": "nic0",
+      "network": "https://www.googleapis.com/compute/beta/projects/refined-veld-388616/global/networks/default",
+      "networkIP": "10.184.0.5",
+      "stackType": "IPV4_ONLY",
+      "subnetwork": "https://www.googleapis.com/compute/beta/projects/refined-veld-388616/regions/asia-southeast2/subnetworks/default"
+    }
+  ],
+  "reservationAffinity": {
+    "consumeReservationType": "ANY_RESERVATION"
+  },
+  "resourceStatus": {
+    "scheduling": {
+      "terminationTimestamp": "2023-06-16T16:22:29.364249Z"
+    }
+  },
+  "scheduling": {
+    "automaticRestart": false,
+    "instanceTerminationAction": "DELETE",
+    "maxRunDuration": {
+      "nanos": 0,
+      "seconds": "3600"
+    },
+    "onHostMaintenance": "TERMINATE",
+    "preemptible": true,
+    "provisioningModel": "SPOT"
+  },
+  "selfLink": "https://www.googleapis.com/compute/beta/projects/refined-veld-388616/zones/asia-southeast2-b/instances/androvm",
+  "serviceAccounts": [
+    {
+      "email": "1080030058199-compute@developer.gserviceaccount.com",
+      "scopes": [
+        "https://www.googleapis.com/auth/devstorage.read_only",
+        "https://www.googleapis.com/auth/logging.write",
+        "https://www.googleapis.com/auth/monitoring.write",
+        "https://www.googleapis.com/auth/service.management.readonly",
+        "https://www.googleapis.com/auth/servicecontrol",
+        "https://www.googleapis.com/auth/trace.append"
+      ]
+    }
+  ],
+  "shieldedInstanceConfig": {
+    "enableIntegrityMonitoring": true,
+    "enableSecureBoot": false,
+    "enableVtpm": true
+  },
+  "shieldedInstanceIntegrityPolicy": {
+    "updateAutoLearnPolicy": true
+  },
+  "shieldedVmConfig": {
+    "enableIntegrityMonitoring": true,
+    "enableSecureBoot": false,
+    "enableVtpm": true
+  },
+  "shieldedVmIntegrityPolicy": {
+    "updateAutoLearnPolicy": true
+  },
+  "startRestricted": false,
+  "status": "RUNNING",
+  "tags": {
+    "fingerprint": "6smc4R4d39I=",
+    "items": [
+      "http-server",
+      "https-server"
+    ]
+  },
+  "zone": "https://www.googleapis.com/compute/beta/projects/refined-veld-388616/zones/asia-southeast2-b"
+}
